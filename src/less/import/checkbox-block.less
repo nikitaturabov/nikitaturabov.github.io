@@ -1,0 +1,50 @@
+.bk-checkbox-block {
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 309px;
+
+    padding-left: 60px;
+    box-sizing: content-box;
+
+    &__title {
+
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+    
+        color: @dark-gray;
+    }
+
+    &__text {
+
+        margin-top: 14px;
+
+        display: block;
+
+        font-size: 16px;
+        line-height: 24px;
+
+        color: @light-gray;
+    }
+
+    &:before {
+    
+        content: "";
+
+        display: block;
+
+        width: 40px;
+        height: 40px;
+
+        background: url("../stack/sprite.svg#icon-check") no-repeat;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

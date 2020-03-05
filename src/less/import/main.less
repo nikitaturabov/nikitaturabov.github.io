@@ -1,0 +1,96 @@
+.bk-main {
+
+    &__section {
+    
+    }
+
+    &__our-offer {
+
+        width: 821px;
+    }
+
+    &__checkboxes {
+
+        margin-top: 80px;
+
+        width: 850px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__circle {
+
+        width: 761px;
+        height: 761px;
+
+        position: absolute;
+        right: -38px;
+        top: 186px;
+    }
+
+    &__circle-slice{
+
+        &:nth-child(1){
+
+            position: absolute;
+            
+            background: url('../img/top-circle.png') no-repeat;
+
+            width: 487.61px;
+            height: 211.16px;
+
+            transform: translate(-50%, 0);
+
+            top: 0;
+            left: 50%;
+        }
+
+        &:nth-child(2){
+
+            position: absolute;
+            
+            background: url('../img/right-circle.png') no-repeat;
+
+            width: 211.16px;
+            height: 487.61px;
+
+            transform: translate(0, -50%);
+
+            right: 0;
+
+            top: 50%;
+        }
+
+        &:nth-child(3){
+
+            position: absolute;
+            
+            background: url('../img/bottom-circle.png') no-repeat;
+
+            width: 487.61px;
+            height: 211.16px;
+
+            transform: translate(-50%, 0);
+
+            bottom: 0;
+            left: 50%;
+        }
+
+        &:nth-child(4){
+
+            position: absolute;
+            
+            background: url('../img/left-circle.png') no-repeat;
+
+            width: 211.16px;
+            height: 487.61px;
+
+            transform: translate(0, -50%);
+
+            left: 0;
+
+            top: 50%;
+        }
+    }
+}
