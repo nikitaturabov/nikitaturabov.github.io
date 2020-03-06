@@ -1,0 +1,60 @@
+.bk-procedure-list {
+
+    &--blue {
+
+        background: #0057D9;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.07);
+        border-radius: 14px;
+
+        display: flex;
+        justify-content: flex-start;
+
+        padding: 44px;
+    }
+
+    &__item {
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+        position: relative;
+
+        padding-left: 85px;
+
+        &:nth-child(1) {
+
+            border-right: 1px solid #E0E0E0;
+
+            padding-right: 26px;
+        }
+
+        &:nth-child(2) {
+
+            border-right: 1px solid #E0E0E0;
+
+            padding-right: 45px;
+        }
+        
+        &:before {
+
+            content: "";
+
+            display: block;
+
+            width: 32px;
+            height: 32px;
+
+            background: url("../stack/sprite.svg#white-check") no-repeat;
+
+            position: absolute;
+            top: 10px;
+            left: 44px;
+        }
+        
+    }
+}
