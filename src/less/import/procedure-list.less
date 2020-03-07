@@ -12,7 +12,19 @@
         padding: 44px;
     }
 
-    &__item {
+    &--white {
+
+        background: #FFFFFF;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.07);
+        border-radius: 14px;
+
+        display: flex;
+        justify-content: flex-start;
+
+        padding: 44px 30px;
+    }
+
+    &__item-blue {
 
         font-weight: 500;
         font-size: 18px;
@@ -56,5 +68,49 @@
             left: 44px;
         }
         
+    }
+
+    &__item-white {
+
+
+        font-size: 16px;
+        line-height: 24px;
+
+        display: flex;
+        align-items: center;
+
+        color: #333333;
+
+        position: relative;
+
+        padding-left: 41px;
+            
+        &:before {
+
+            content: "";
+
+            display: block;
+
+            width: 32px;
+            height: 32px;
+
+            background: url("../stack/sprite.svg#icon_attention") no-repeat;
+
+            position: absolute;
+            top: 0px;
+            left: -10px;
+        
+        }
+
+        & + & {
+
+            padding-left: 91px;
+
+            &:before {
+
+                left: 40px;   
+            }
+        }
+
     }
 }
