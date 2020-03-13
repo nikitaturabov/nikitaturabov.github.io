@@ -1,0 +1,48 @@
+.bk-services {
+
+    &__field {
+
+        max-width: 1180px;
+
+        margin: 0 auto;
+
+        margin-top: 22px;
+
+        &--x2 {
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &--x1 {
+
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__center-word {
+
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 60px;
+
+        &:after {
+
+            content: "";
+
+            display: block;
+
+            width: 52px;
+            height: 6px;
+
+            position: absolute;
+
+            background: @dark-blue;
+
+            transform: translate(-50%, 0);
+
+            left: 50%;
+        }
+    }
+}
