@@ -1,0 +1,47 @@
+.bk-client-choice {
+
+    &--default {
+
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;  
+    }
+
+    &--reverse {
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;  
+    }
+
+    &__info {
+
+        display: flex;
+        flex-direction: column;
+        margin: 0 80px;
+    }
+
+    &__image {
+
+        flex-shrink: 0;
+    }
+
+    &__title {
+
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 42px;
+
+        color: @dark-gray;
+    }
+
+    &__text {
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 34px;
+
+        color: @light-gray;
+    }
+}
