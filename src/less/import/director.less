@@ -1,0 +1,65 @@
+.bk-director {
+
+    &__title {
+
+    }
+
+    &__info-wrapper {
+
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 50px;
+    }
+
+    &__photo {
+
+        flex-shrink: 0;
+    }
+
+    &__info {
+
+        color: @dark-gray;
+
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 27px;
+    }
+
+    &__info,
+    &__photo {
+
+        width: calc(100% / 2);
+    }
+
+    &__name {
+
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &__position {
+
+        font-size: 16px;
+
+        color: @light-gray;
+    }
+
+    &__appeal {
+
+        font-size: 16px;
+        line-height: 32px;
+
+        p {
+
+            margin-top: 30px;
+        }
+    }
+
+    &__link {
+
+        margin-top: 25px;
+        width: 296px;
+    }
+}
