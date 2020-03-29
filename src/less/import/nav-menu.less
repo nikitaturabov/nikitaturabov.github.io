@@ -16,13 +16,23 @@
         line-height: 20px;
     }
 
-    &__link {
+    &--header &__link {
 
         color: @dark-gray;
 
         &:target {
 
             color: @dark-gray;
+        }
+    }
+
+    &--footer  &__link {
+
+        color: @white;
+
+        &:target {
+
+            color: @white;
         }
     }
 }

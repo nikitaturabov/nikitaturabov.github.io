@@ -1,6 +1,7 @@
-.bk-header {
+.bk-header,
+.bk-footer{
 
-    &__top-line {
+    &__info-line {
 
         display: flex;
         justify-content: flex-end;
@@ -10,7 +11,7 @@
         margin: 0 auto; 
     }
 
-    &__bottom-line {
+    &__navi-line {
 
         margin: 27px auto 0;
         
@@ -20,6 +21,9 @@
 
         max-width: 1283px;
     }
+}
+
+.bk-info-line {
 
     &__adress {
 
@@ -27,8 +31,6 @@
 
         font-weight: normal;
         font-size: 13px;
- 
-        color: #696969;
 
         max-width: 300px;
 
@@ -42,14 +44,47 @@
         font-weight: bold;
         font-size: 20px;
         line-height: 24px;
-
-        color: @dark-blue;
     }
 
     &__schedule{
 
         display: block;
     }
+
+    &--header &__adress{
+
+        color: @light-gray;
+    }
+    
+    &--header &__phone{
+
+        color: @dark-blue;
+    }
+
+    &--header>&__schedule{
+
+        color: @dark-gray;
+    }
+
+    &--footer>&__adress{
+
+        color: @white;
+        font-size: 13px;
+    }
+    
+    &--footer &__phone{
+
+        color: @gray-bg;
+    }
+
+    &--footer &__schedule{
+
+        color: @gray-bg;
+        font-size: 13px;
+    }
+}
+
+.bk-navi-line {
 
     &__logo {
     
@@ -60,7 +95,6 @@
     &__nav-menu {
     
         display: block;
-
         width: 733px;
     }
 }
