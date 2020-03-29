@@ -5,7 +5,7 @@
         return;
     }
 
-    var swiper = new Swiper('.swiper-container', {
+    new Swiper('.swiper-container', {
         slidesPerView: 4,
         spaceBetween: 30,
         centeredSlides: false,
@@ -18,7 +18,14 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        on: {
+            click(e) {
+                if (e.target.closest(".swiper-slide__zoom-btn")) {
 
+                    zoomSlide.call(this);
+                }
+            }
+        }
     });
 
 })(document.querySelectorAll('.swiper-container'));

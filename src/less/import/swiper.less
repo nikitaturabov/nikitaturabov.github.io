@@ -1,25 +1,79 @@
-.swiper-button-next,
-.swiper-button-prev {
+.bk-nav-btns {
+
+    &__btn {
+
+        position: relative;
+        top: 0;
+        right: inherit;
+        left: inherit;
+        outline: none;
+    }
+}
+
+.bk-nav-btn {
+
+    &--prev {
+    
+        background: url(../stack/sprite.svg#circle-chevron-left);
+
+        width: 40px;
+        height: 40px;
+        
+        &:after {
+
+            content: none;
+        }
+    }
+
+    &--next {
+
+        background: url(../stack/sprite.svg#circle-chevron-right);
+        width: 40px;
+        height: 40px;
+        margin-left: 8px;
+
+        &:after {
+
+            content: none;
+        }
+    }
+}
+
+.swiper-slide {
 
     position: relative;
-    top: 0;
-    right: inherit;
-    left: inherit;
-    outline: none;
-}
 
-.swiper-button-next {
+    &__zoom-btn {
 
-    background: url(/stack/sprite.svg#circle-chevron-right);
-    width: 40px;
-    height: 40px;
-    margin-left: 8px;
-}
+        background: url(../stack/sprite.svg#zoom-btn);
+        width: 76px;
+        height: 76px;
 
-.swiper-button-prev {
+        transform: translate(-50%, -50%);
 
-    background: url(/stack/sprite.svg#circle-chevron-left);
+        position: absolute;
+        top: 50%;
+        left: 50%;
 
-    width: 40px;
-    height: 40px;
+        cursor: pointer;
+
+        opacity: 0;
+
+        outline: none;
+
+        transition: opacity 0.3s;
+    }
+
+    &:hover {
+
+        .swiper-slide__zoom-btn {
+
+            opacity: 0.7;
+
+            &:hover {
+
+                opacity: 1;
+            }
+        }
+    }
 }

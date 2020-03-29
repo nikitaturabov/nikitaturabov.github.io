@@ -1,0 +1,53 @@
+.bk-container-zoom {
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #fff;
+    z-index: 999999;
+
+    
+
+    &--hidden {
+
+        display: none;
+    }
+
+    body & {
+
+        overflow: hidden;
+    }
+
+    .swiper-slide { 
+
+        width: 100%;
+
+        .swiper-slide__zoom-btn {
+
+            display: none;
+        }
+    }
+
+    .bk-diplomas__img {
+
+        width: 630px;
+        margin: 0 auto;
+    }
+
+    &__close-btn {
+
+        width: 40px;
+        height: 40px;
+
+        background: url(../stack/sprite.svg#x);
+
+        position: absolute;
+        top: 14px;
+        right: 23px;
+
+        cursor: pointer;
+        outline: none;
+    }
+}
