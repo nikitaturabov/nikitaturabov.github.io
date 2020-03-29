@@ -15,10 +15,13 @@ function zoomSlide() {
     cloneSlider.appendChild(btnPrev);
     zoomContainer.appendChild(cloneSlider);
 
+    document.body.style.overflow = "hidden";
+
     btnClose.addEventListener("click", (e) => {
 
         zoomContainer.classList.add('bk-container-zoom--hidden');
         zoomContainer.innerHTML = '';
+        document.body.style.overflow = "";
     })
 
     new Swiper('.swiper-container--zoom', {

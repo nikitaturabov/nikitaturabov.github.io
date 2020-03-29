@@ -13,13 +13,27 @@
 
     &__navi-line {
 
-        margin: 27px auto 0;
-        
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         max-width: 1283px;
+    }
+}
+
+.bk-header{
+    
+    &__navi-line {
+
+        margin: 27px auto;
+    }
+}
+
+.bk-footer{
+    
+    &__navi-line {
+
+        margin: 0px auto;
     }
 }
 
@@ -32,9 +46,9 @@
         font-weight: normal;
         font-size: 13px;
 
-        max-width: 300px;
+        max-width: 303px;
 
-        margin-right: 60px;
+        margin-right: 55px;
     }
     
     &__phone{
@@ -49,6 +63,11 @@
     &__schedule{
 
         display: block;
+        font-size: 13px;
+
+        color: @light-gray;
+
+        float: right;
     }
 
     &--header &__adress{
@@ -90,11 +109,13 @@
     
         width: 174px;
         height: 34px;
+
+        margin-right: 56px;
     }
 
     &__nav-menu {
     
         display: block;
-        width: 733px;
+        flex: 0.86;
     }
 }

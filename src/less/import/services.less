@@ -6,7 +6,20 @@
 
         margin: 0 auto;
 
-        margin-top: 22px;
+        &:nth-child(1) {
+
+            margin-top: -2px;
+        }
+
+        &:nth-child(2) {
+
+            margin-top: 39px;
+        }
+
+        &:nth-child(3) {
+
+            margin-top: 55px;
+        }
 
         &--x2 {
 
@@ -26,6 +39,7 @@
         font-weight: bold;
         font-size: 40px;
         line-height: 60px;
+        position: relative;
 
         &:after {
 
@@ -43,6 +57,7 @@
             transform: translate(-50%, 0);
 
             left: 50%;
+            bottom: -19px;
         }
     }
 }

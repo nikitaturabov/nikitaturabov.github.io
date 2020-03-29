@@ -9,14 +9,9 @@
         slidesPerView: 4,
         spaceBetween: 30,
         centeredSlides: false,
-
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '#dip-next',
+            prevEl: '#dip-prev',
         },
         on: {
             click(e) {
@@ -32,14 +27,9 @@
         slidesPerView: 4,
         spaceBetween: 30,
         centeredSlides: false,
-
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '#doc-next',
+            prevEl: '#doc-prev',
         },
         on: {
             click(e) {
