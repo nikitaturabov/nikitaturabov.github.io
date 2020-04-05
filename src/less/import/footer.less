@@ -6,8 +6,68 @@
 
     padding-top: 67px;
 
+    position: relative;
+
+    @media @tablet {
+            
+        padding: 33px 15px 37px;
+        height: initial;
+
+        nav {
+
+            display: block;
+
+            ul{
+
+                display: flex;
+                flex-direction: column;
+
+                li {
+                
+                    padding: 10px;
+                }
+            }
+        }
+        
+        .bk-btn {
+        
+            width: 100%;
+
+            text-align: center;
+
+            margin-top: 25px;
+        }
+    }
+
     &__info-line {
 
         margin-top: 27px;
+
+        @media @tablet { 
+
+            margin-top: 0;
+        }
+
+    }
+
+    &__info-line {
+
+        padding: 30px;
+
+        @media @tablet {
+            
+            flex-direction: column;
+
+            span {
+
+                margin-right: 0;
+                text-align: center;
+            }
+
+            div {
+
+                margin-top: 10px;
+            }
+        }
     }
 }

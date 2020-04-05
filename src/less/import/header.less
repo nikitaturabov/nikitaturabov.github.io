@@ -42,6 +42,12 @@
     &__navi-line {
 
         margin: 0px auto;
+
+        @media @tablet {
+
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
@@ -119,6 +125,11 @@
         height: 34px;
 
         margin-right: 56px;
+
+        @media @tablet {
+            
+            margin-right: 0px;
+        }
     }
 
     &__nav-menu {

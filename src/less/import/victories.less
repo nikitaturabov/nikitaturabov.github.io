@@ -6,6 +6,12 @@
 
     padding-top: 100px;
 
+    @media @tablet {
+
+        padding: 40px 15px;
+        height: inherit;
+    }
+
     &__wrapper {
 
         max-width: 1283px;
@@ -25,20 +31,37 @@
         color: @white;
     }
 
+    @media @desktop {
 
-    &__nav-btns {
+        &__nav-btns {
 
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        height: 40px;
-        position: absolute;
-        top: 9px;
-        right: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 40px;
+            position: absolute;
+            top: 9px;
+            right: 0;
+        }
+    }
+
+    &__img {
+
+        @media @tablet {
+
+            display: block;
+            margin: 0 auto;
+        }
+
     }
 
     &__swiper-container {
 
         margin-top: 53px;
+
+        @media @tablet {
+
+            padding: 0 50px;
+         }
     }
 }

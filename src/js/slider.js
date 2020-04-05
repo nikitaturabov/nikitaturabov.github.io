@@ -6,8 +6,8 @@
     }
 
     new Swiper('.swiper-container--diplomas', {
-        slidesPerView: 4,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 50,
         centeredSlides: false,
         navigation: {
             nextEl: '#dip-next',
@@ -20,12 +20,26 @@
                     zoomSlide.call(this);
                 }
             }
+        },
+        breakpoints: {
+            1160: {
+                slidesPerView: 4,
+                spaceBetweenSlides: 30
+            },
+            900: {
+                slidesPerView: 3,
+                spaceBetweenSlides: 30
+            },
+            660: {
+                slidesPerView: 2,
+                spaceBetweenSlides: 30
+            }
         }
     });
 
     new Swiper('.swiper-container--documents', {
-        slidesPerView: 4,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 50,
         centeredSlides: false,
         navigation: {
             nextEl: '#doc-next',
@@ -37,6 +51,20 @@
 
                     zoomSlide.call(this);
                 }
+            },
+        },
+        breakpoints: {
+            1160: {
+                slidesPerView: 4,
+                spaceBetweenSlides: 30
+            },
+            900: {
+                slidesPerView: 3,
+                spaceBetweenSlides: 30
+            },
+            660: {
+                slidesPerView: 2,
+                spaceBetweenSlides: 30
             }
         }
     });

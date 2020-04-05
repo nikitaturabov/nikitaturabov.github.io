@@ -1,11 +1,22 @@
+@media @desktop {
+         
+    .bk-nav-btns {
+
+        &__btn {
+
+            position: relative;
+            top: 0;
+            right: inherit;
+            left: inherit;
+            outline: none;
+        }
+    }
+}
+
 .bk-nav-btns {
 
     &__btn {
 
-        position: relative;
-        top: 0;
-        right: inherit;
-        left: inherit;
         outline: none;
     }
 }
@@ -44,6 +55,7 @@
 
         &--white {
 
+           
             background: url(../stack/sprite.svg#circle-chevron-right--white);
         }
     }
@@ -72,6 +84,11 @@
         outline: none;
 
         transition: opacity 0.3s;
+
+        @media @tablet {
+         
+            display: none;
+         }
     }
 
     &:hover {

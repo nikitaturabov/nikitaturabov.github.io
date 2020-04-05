@@ -4,25 +4,41 @@
 
     &__nav-btns {
 
-        display: flex;
-        justify-content: flex-end;
-
-        align-items: flex-end;
-
-        height: 40px;
-        position: absolute;
-        top: 9px;
-        right: 0px;
+        @media @desktop {
+         
+            display: flex;
+            justify-content: flex-end;
+    
+            align-items: flex-end;
+    
+            height: 40px;
+            position: absolute;
+            top: 9px;
+            right: 0px;
+         }
     }
 
     &__img {
 
         width: 305px;
+
+     @media @tablet {
+
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+     }
+
     }
 
     &__swiper-container {
 
         margin-top: 50px;
+
+        @media @tablet {
+
+            padding: 0 30px;
+         }
     }
 
     &__diplom-name {
