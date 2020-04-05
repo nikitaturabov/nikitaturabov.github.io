@@ -8,6 +8,13 @@
         letter-spacing: 0.3px;
 
         color: @dark-gray;
+
+        @media @tablet {
+            
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 
     &__text {
@@ -35,5 +42,16 @@
         position: absolute;
         top: 50%;
         left: 0;
+
+        @media @tablet {
+
+            transform: translate(-50%,-50%);
+            top: -77px;
+            left: 50%;
+
+            width: 76px;
+            height: 76px;
+        }
+    
     }
 }

@@ -3,6 +3,11 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+            
+        flex-direction: column;
+    }
+
     &__item {
 
         width: 305px;
@@ -18,6 +23,16 @@
         justify-content: flex-start;
 
         padding: 20px 27px;
+
+        @media @tablet {
+            
+            max-width: 600px;
+
+            & + & {
+
+                margin-top: 10px;
+            }
+        }
     }
 
 }

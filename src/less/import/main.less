@@ -4,21 +4,34 @@
     
         max-width: 1283px;
         margin: 0 auto;
+
+        @media @tablet {
+            
+            padding: 0 15px;
+            min-width: 320px;
+            margin: 0 auto;
+        }
     }
 
     &__our-offer {
 
-        width: 821px;
+        max-width: 821px;
     }
 
     &__checkboxes {
 
         margin-top: 79px;
 
-        width: 827px;
+        max-width: 827px;
 
         display: flex;
         justify-content: space-between;
+
+        @media @tablet {
+            
+            flex-direction: column;
+            margin-top: 36px;
+        }
     }
 
     &__circle {
@@ -33,6 +46,12 @@
     &__late-payment {
 
         margin-top: 230px;
+
+        @media @tablet {
+            
+            flex-direction: column;
+            margin-top: 23px;
+        }
     }
 
     &__procedure {

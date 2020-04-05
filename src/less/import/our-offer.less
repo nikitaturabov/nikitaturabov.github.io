@@ -6,15 +6,30 @@
 
         font-size: 24px;
         line-height: 38px;
-        width: 690px;
+        max-width: 690px;
 
         color: @dark-gray;
 
         display: block;
+
+        @media @tablet {
+            
+            font-size: 13px;
+            line-height: 18px;
+
+            text-align: center;
+        }
     }
 
     &__btn {
 
         margin-top: 24px;
+
+        @media @tablet {
+            
+            width: 100%;
+            text-align: center;
+            white-space: nowrap;
+        }
     }
 }
