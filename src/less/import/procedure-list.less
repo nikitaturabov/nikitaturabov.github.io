@@ -10,6 +10,14 @@
         justify-content: flex-start;
 
         padding: 44px;
+        
+        @media @tablet {
+            
+            padding: 25px;
+            
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &--white {
@@ -22,6 +30,14 @@
         justify-content: flex-start;
 
         padding: 47px 60px 36px 48px;
+
+        @media @tablet {
+            
+            padding: 25px;
+            
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__item-blue {
@@ -66,6 +82,72 @@
             position: absolute;
             top: 10px;
             left: 44px;
+
+            @media @tablet {
+
+                top: -38px;
+                transform: translate(-50%, 0px);
+                left: 50%;
+            }
+        }
+
+        @media @tablet {
+
+            padding-left: 0px;
+
+            font-size: 13px;
+            line-height: 18px;
+
+            text-align: center;
+
+            border-right: none;
+
+            margin-top: 50px;
+
+            font-weight: 400;
+
+            & + & {
+
+                margin-top: 95px;
+            }
+
+            &:not(:last-child) {
+
+                position: relative;
+
+                &:after { 
+
+                    content: "";
+
+                    display: block;
+        
+                    height: 2px;
+                    width: 58px;
+
+                    opacity: 0.2;
+                    background: #E0E0E0;
+
+                    transform: translate(-50%, 0px);
+                    left: 50%;
+
+                    position: absolute;
+                    bottom: -22px;
+                }
+            }
+
+            &:nth-child(1) {
+
+                border-right: none;
+    
+                padding-right: 0;
+            }
+    
+            &:nth-child(2) {
+    
+                border-right: none;
+    
+                padding-right: 0;
+            }
         }
         
     }
@@ -99,6 +181,13 @@
             position: absolute;
             top: 0px;
             left: -10px;
+
+            @media @tablet {
+
+                top: -47px;
+                transform: translate(-50%, 0px);
+                left: 50%;
+            }
         
         }
 
@@ -108,9 +197,35 @@
 
             &:before {
 
-                left: 40px;   
+                left: 40px; 
+                
+                @media @tablet {
+
+                    left: 50%;
+                }
             }
         }
 
+        @media @tablet {
+
+            padding-left: 0px;
+
+            font-size: 13px;
+            line-height: 18px;
+
+            text-align: center;
+
+            border-right: none;
+
+            margin-top: 50px;
+
+            font-weight: 400;
+
+            & + & {
+
+                margin-top: 76px;
+                padding-left: 0px;
+            }
+        }
     }
 }

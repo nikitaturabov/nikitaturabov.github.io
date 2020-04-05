@@ -8,27 +8,71 @@
 
         display: flex;
         justify-content: center;
+
+        @media @tablet {
+            
+            height: inherit;
+            max-width: 100%;
+
+            justify-content: flex-start;
+            flex-direction: column;
+
+            height: inherit;
+            padding: 43px 15px;
+        }
     }
 
     &__wrapper {
 
         max-width: 1177px;
         flex: 1;
+
+        @media @tablet {
+            
+            height: inherit;
+            max-width: 100%;
+
+            justify-content: flex-start;
+            flex-direction: column;
+        }
     }
 
     &__title {
 
         margin-top: 33px;
+
+        @media @tablet {
+            
+            margin-top: 0;
+            text-align: left;
+        }
     }
 
     &__text {
 
         color: @white;
         margin-top: 11px;
+
+        @media @tablet {
+            
+            font-size: 13px;
+            line-height: 18px;
+        }
     }
 
     &__form {
 
         margin-top: 36px;
+
+        @media @tablet {
+            
+            margin-top: 16px;
+
+            height: inherit;
+            max-width: 100%;
+
+            justify-content: flex-start;
+            flex-direction: column;
+        }
     }
 }

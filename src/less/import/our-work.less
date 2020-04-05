@@ -4,9 +4,19 @@
     height: 700px;
     background-image: url("../img/bg-our-work.png");
 
+    @media @tablet {
+
+       height: inherit;
+    }
+
     &__cards {
 
         margin-top: 50px;
+
+        @media @tablet {
+
+            margin-top: 20px;
+        }
     }
 
     &__wrapper {
@@ -14,11 +24,16 @@
         padding: 105px 0;
         box-sizing: border-box;
 
-        width: 1280px;
+        max-width: 1280px;
         margin: 0 auto;
 
         display: flex;
         flex-direction: column;
+
+        @media @tablet {
+
+            padding: 45px 15px 32px;
+        }
     }
 
     &__btn {
@@ -28,5 +43,12 @@
         margin-top: 50px;
         width: 297px;
         align-self: center;
+
+        @media @tablet {
+
+            margin-top: 20px;
+            font-size: 13px;
+            text-align: center;
+        }
     }
 }

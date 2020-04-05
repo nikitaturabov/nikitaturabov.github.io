@@ -10,16 +10,36 @@
 
         margin-top: 10px;
         display: block;
+
+        @media @tablet {
+
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+
+            text-align: center;
+        }
     }
 
     &__wrapper-items {
 
         max-width: 1182px;
         margin: 0 auto;
+
+        @media @tablet {
+
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__item {
 
         margin-top: 84px;
+
+        @media @tablet {
+
+            margin-top: 30px;
+        }
     }
 }

@@ -10,6 +10,13 @@
     width: 420px;
     position: relative;
 
+    @media @tablet {
+            
+        width: 100%;
+
+        padding: 81px 30px 30px;
+    }
+
     &:before {
 
         content: "";
@@ -23,6 +30,12 @@
 
         top: 20px;
         right: 20px;
+
+        @media @tablet {
+            
+            transform: translate(-50%, 0px);
+            left: 50%;
+        }
     }
 
     &__title {
@@ -32,6 +45,13 @@
         line-height: 22px;
 
         color: @dark-gray;
+
+        @media @tablet {
+            
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+        }
     }
 
     &__text {
@@ -44,11 +64,23 @@
         color: @light-gray;
 
         max-width: 320px;
+
+        @media @tablet {
+            
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+        }
     }
 
     &__btn {
 
         margin-top: 17px;
+
+        @media @tablet {
+
+           justify-content: center;
+        }
     }
 
     &--representative {
@@ -65,6 +97,11 @@
 
             background: url("../stack/sprite.svg#icon_bankrupcy") no-repeat;
         }
+
+        @media @tablet {
+            
+            margin-top: 10px;
+        }
     }
 
     &--receivables {
@@ -73,6 +110,11 @@
 
             background: url("../stack/sprite.svg#icon_debitorka") no-repeat;
         }
+
+        @media @tablet {
+            
+            margin-top: 10px;
+        }
     }
 
     &--production {
@@ -80,6 +122,11 @@
         &:before {
 
             background: url("../stack/sprite.svg#icon_ispolnit") no-repeat;
+        }
+
+        @media @tablet {
+            
+            margin-top: 10px;
         }
     }
 }

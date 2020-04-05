@@ -10,12 +10,28 @@
         justify-content: space-between;
 
         margin-top: 50px;
+        
+        @media @tablet {
+
+            margin-top: 24px;
+
+            flex-direction: column;
+    
+        }
     }
 
     &__photo {
 
         flex-shrink: 0;
         width: calc(100% / 2 - 39px);
+
+        @media @tablet {
+
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__info {
@@ -32,6 +48,11 @@
 
         font-weight: bold;
         font-size: 24px;
+
+        @media @tablet {
+
+            font-size: 17px;
+        }
     }
 
     &__position {
@@ -39,6 +60,11 @@
         font-size: 16px;
 
         color: @light-gray;
+
+        @media @tablet {
+
+            font-size: 13px;
+        }
     }
 
     &__appeal {
@@ -51,12 +77,27 @@
             margin-top: 36px;
             line-height: 31px;
 
+            @media @tablet {
+
+                margin-top: 15px;
+            }
         }
+
+        margin-top: 36px;
     }
 
     &__link {
 
         margin-top: 25px;
         width: 296px;
+        
+        @media @tablet {
+
+            margin-top: 15px;
+            width: 100%;
+            text-align: center;
+
+            font-size: 13px;
+        }
     }
 }
