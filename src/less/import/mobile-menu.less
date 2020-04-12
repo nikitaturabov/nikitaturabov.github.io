@@ -1,0 +1,84 @@
+.bk-mobile-menu {
+	position: fixed;
+
+	top: 0;
+	bottom: 0;
+	left: 0px;
+	right: 0;
+
+	background: rgba(0, 0, 0, 0.49);
+
+	z-index: 222;
+	display: none;
+
+	&--window {
+		position: fixed;
+
+		top: 0;
+		bottom: 0;
+		left: 52px;
+		right: 0;
+		background: @dark-blue;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	&--opened {
+		display: block;
+	}
+
+	&__btn-close {
+		position: absolute;
+
+		top: 15px;
+		right: 21px;
+
+		width: 23px;
+		height: 23px;
+		background: none;
+		border: none;
+		outline: none;
+
+		svg {
+			width: 23px;
+			height: 23px;
+		}
+	}
+
+	&__nav-menu {
+		@media @tablet {
+			display: flex;
+		}
+
+		li {
+			padding: 10px;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+
+		align-items: center;
+		color: @white;
+	}
+
+	&__phone {
+		color: @white;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	&__adress {
+		display: block;
+		color: @white;
+		font-size: 12px;
+		line-height: 18px;
+		padding: 15px;
+		text-align: center;
+	}
+}

@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>start</title>
 
+	<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600,700i&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -64,6 +65,16 @@
 			</nav>
 
 			<a href="#" class="bk-navi-line__btn bk-btn bk-btn--white">Заказать звонок</a>
+
+			<button class="js-btn-open-menu bk-navi-line__mobile-menu">
+			
+				<svg class="bk-navi-line__pic--mobile-menu">
+			
+					<use xlink:href="../stack/sprite.svg#menu"></use>
+			
+				</svg>
+			
+			</button>
 
 		</div>
 
@@ -788,7 +799,6 @@
 					<li class="bk-nav-menu__item"><a href="" class="bk-nav-menu__link">Контакты</a></li>
 					<li class="bk-nav-menu__item"><a href="" class="bk-nav-menu__link">Наши дела</a></li>
 
-
 				</ul>
 
 			</nav>
@@ -814,9 +824,53 @@
 
 	</footer>
 
-
-
 	<div class="bk-container-zoom bk-container-zoom--hidden"></div>
+
+	<div class="bk-mobile-menu">
+
+		<div class="bk-mobile-menu--window">
+
+			<button class="js-btn-close-menu bk-mobile-menu__btn-close">
+			
+				<svg class="bk-navi-line__pic--mobile-menu-close">
+			
+					<use xlink:href="../stack/sprite.svg#close"></use>
+			
+				</svg>
+			
+			</button>
+
+			<nav class="bk-mobile-menu__nav-menu bk-nav-menu bk-nav-menu--footer">
+			
+				<ul class="bk-nav-menu__list-items">
+			
+					<li class="bk-nav-menu__item"><a href="" class="bk-nav-menu__link">Услуги</a></li>
+					<li class="bk-nav-menu__item"><a href="" class="bk-nav-menu__link">Преимущества</a></li>
+					<li class="bk-nav-menu__item"><a href="" class="bk-nav-menu__link">Как мы работаем</a></li>
+					<li class="bk-nav-menu__item"><a href="" class="bk-nav-menu__link">О компании</a></li>
+					<li class="bk-nav-menu__item"><a href="" class="bk-nav-menu__link">Контакты</a></li>
+					<li class="bk-nav-menu__item"><a href="" class="bk-nav-menu__link">Наши дела</a></li>
+			
+				</ul>
+			
+			</nav>
+
+			<div class="bk-nav-menu__contacts-wrapper">
+
+				<div class="bk-mobile-menu__contacts">
+				
+					<a href="tel:+79112523624" class="bk-mobile-menu__phone">+7 (911) 252-36-24</a>
+				
+					<span class="bk-mobile-menu__schedule">Пн-Пт с 9:00 до 18:00</span>
+				
+				</div>
+				
+				<span class="bk-mobile-menu__adress">г. Архангельск, пр-т Троицкий, д.67 офис 405
+					(Бизнес-центр ТЦ "Пирамида", 4 этаж)</span>
+			</div>
+
+		</div>
+	</div>
 
 </body>
 

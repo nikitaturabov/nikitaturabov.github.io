@@ -1,17 +1,23 @@
 .bk-bankruptcy {
-    
-    &__header {
+	&__header {
+		padding: 26px 0;
+		min-width: 320px;
 
-        padding: 26px 0;
-    }
+		@media @tablet {
+			padding: 15px;
 
-    &__main {
+			position: sticky;
+			top: 0;
+			background: #ffffff;
+			z-index: 111;
+		}
+	}
 
-        margin-top: 92px;
+	&__main {
+		margin-top: 92px;
 
-        @media @tablet {
-            
-            margin-top: 00px;
-        }
-    }
+		@media @tablet {
+			margin-top: 00px;
+		}
+	}
 }
