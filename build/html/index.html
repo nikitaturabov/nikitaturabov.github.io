@@ -92,7 +92,7 @@
 					уменьшение удержаний по исполнительным документам
 				</span>
 
-				<a href="#" class="bk-our-offer__btn bk-btn bk-btn--blue">Получить консультацию</a>
+				<button data-modal="form" class="bk-our-offer__btn bk-btn bk-btn--blue">Получить консультацию</button>
 
 			</div>
 
@@ -324,7 +324,7 @@
 
 							<span class="bk-input__name">Имя</span>
 
-							<input class="bk-input__area" type="text" name="name" id="" required>
+							<input class="bk-input__area input-editor--fio" type="text" name="name" id="" required>
 
 						</label>
 
@@ -336,7 +336,7 @@
 
 							<span class="bk-input__name">Мобильный телефон</span>
 
-							<input class="bk-input__area" type="text" name="phone" id="" required>
+							<input class="bk-input__area input-editor--phone" type="text" name="phone" id="" required>
 
 						</label>
 
@@ -872,6 +872,62 @@
 		</div>
 	</div>
 
+	<div class="bk-modals-area">
+		
+		<div class="bk-modal bk-modal--form">
+
+			<button class="js-btn-close-form bk-modal__btn-close">
+			
+				<svg>
+			
+					<use xlink:href="../stack/sprite.svg#close--gray"></use>
+			
+				</svg>
+			
+			</button>
+
+			<div class="bk-modal__title">Получить консультацию</div>
+
+			<div class="bk-modal__text">Оставьте заявку и наши юристы свяжутся с Вами
+			в течение 15 минут для бесплатной консультации</div>
+
+			<form method="POST" action="./send.php" class="bk-modal__form bk-form bk-form--row">
+			
+				<div class="bk-modal__input bk-form__input bk-input bk-input--wrapper">
+			
+					<label class="bk-input__label">
+			
+						<span class="bk-input__name">Имя</span>
+			
+						<input class="bk-input__area input-editor--fio" type="text" name="name" id="" required>
+			
+					</label>
+			
+				</div>
+			
+				<div class="bk-modal__input bk-form__input bk-input bk-input--wrapper">
+			
+					<label class="bk-input__label">
+			
+						<span class="bk-input__name">Мобильный телефон</span>
+			
+						<input class="bk-input__area input-editor--phone" type="text" name="phone" id="" required>
+			
+					</label>
+			
+				</div>
+			
+			
+				<button href="#" class="bk-modal__btn bk-form__btn bk-btn bk-btn--light-blue">Получить бесплатную
+					консультацию</button>
+			</form>
+
+			<div class="bk-modal__subscribe">Нажимая кнопку <a href="#">«Получить бесплатную консультацию»</a>,
+			вы даете согласие на обработку персональных данных.</div>
+
+		</div>
+
+	</div>
 </body>
 
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
