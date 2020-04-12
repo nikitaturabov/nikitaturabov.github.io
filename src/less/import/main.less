@@ -12,15 +12,19 @@
 
 	&__our-offer {
 		max-width: 821px;
-		margin: 0 auto;
+
+		@media @tablet {
+			margin: 0 auto;
+		}
 	}
 
 	&__checkboxes {
+		margin-top: 76px;
+
 		max-width: 827px;
 
 		display: flex;
 		justify-content: space-between;
-		margin: 79px auto 0;
 
 		@media @phone {
 			flex-direction: column;
@@ -28,7 +32,7 @@
 		}
 
 		@media @tablet {
-			margin-top: 36px;
+			margin: 36px auto 0;
 		}
 	}
 
