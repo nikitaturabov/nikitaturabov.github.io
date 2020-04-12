@@ -1,80 +1,71 @@
 .bk-checkbox-block {
+	position: relative;
 
-    position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+	max-width: 309px;
 
-    max-width: 309px;
+	padding-left: 60px;
+	box-sizing: content-box;
 
-    padding-left: 60px;
-    box-sizing: content-box;
+	@media @phone {
+		padding-left: 30px;
 
-    @media @tablet {
-            
-        padding-left: 30px;
+		& + & {
+			margin-top: 25px;
+		}
+	}
 
-        & + & {
+	&__title {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
 
-            margin-top: 25px;
-        }
-    }
+		color: @dark-gray;
 
-    &__title {
+		@media @tablet {
+			font-size: 13px;
+			line-height: 16px;
+		}
+	}
 
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-    
-        color: @dark-gray;
+	&__text {
+		margin-top: 14px;
 
-        @media @tablet {
-            
-            font-size: 13px;
-            line-height: 16px;
-        }
-    }
+		display: block;
 
-    &__text {
+		font-size: 16px;
+		line-height: 24px;
 
-        margin-top: 14px;
+		color: @light-gray;
 
-        display: block;
+		@media @tablet {
+			font-size: 13px;
+			line-height: 18px;
+		}
+	}
 
-        font-size: 16px;
-        line-height: 24px;
+	&:before {
+		content: "";
 
-        color: @light-gray;
+		display: block;
 
-        @media @tablet {
-            
-            font-size: 13px;
-            line-height: 18px;
-        }
-    }
+		width: 40px;
+		height: 40px;
 
-    &:before {
-    
-        content: "";
+		background: url("../stack/sprite.svg#icon-check") no-repeat;
 
-        display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
 
-        width: 40px;
-        height: 40px;
+		@media @tablet {
+			width: 23px;
+			height: 23px;
 
-        background: url("../stack/sprite.svg#icon-check") no-repeat;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        @media @tablet {
-            
-            width: 23px;
-            height: 23px;
-
-            top: -3px;
-        }
-    }
+			top: -3px;
+		}
+	}
 }
