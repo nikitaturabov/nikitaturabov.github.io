@@ -34,6 +34,7 @@
 		@media @tablet {
 			padding: 40px 15px;
 			margin: 15px;
+			max-width: 370px;
 		}
 	}
 
@@ -79,6 +80,7 @@
 		line-height: 24px;
 		color: @light-gray;
 		text-align: center;
+		max-width: 415px;
 
 		@media @tablet {
 			font-size: 13px;
@@ -111,14 +113,18 @@
 	}
 
 	&__btn {
+		margin-top: 10px;
 		@media @tablet {
 			font-size: 13px;
-			padding: 15px 0px;
+			padding: 15px;
 		}
 	}
 
 	&__form {
 		margin-top: 30px;
 		flex-direction: column;
+		@media @tablet {
+			width: 100%;
+		}
 	}
 }
